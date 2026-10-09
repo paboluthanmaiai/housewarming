@@ -263,15 +263,17 @@ button {
 .floating-audio-widget {
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 1.25rem;
+  left: auto;
   z-index: 1000;
   transition: transform 0.3s ease;
 }
 
 @media (max-width: 900px) {
   .floating-audio-widget {
-    bottom: 5.2rem; /* Sits cleanly above mobile sticky action bar */
-    right: 1.25rem;
+    bottom: 1.25rem; /* Sits cleanly above mobile sticky action bar */
+    right: 1rem;
+    left: auto;
   }
 }
 
@@ -1672,6 +1674,7 @@ footer.site-footer {
   padding: 0.3rem !important;
   width: 34px !important;
   height: 34px !important;
+  top: 10px;
   min-width: 34px !important;
   gap: 0 !important;
   border-radius: 50% !important;
@@ -1711,5 +1714,12 @@ footer.site-footer {
     padding: 0 !important;
     margin: 0 !important;
     border: none !important;
+  }
+}
+
+/* Completely remove footer on mobile devices */
+@media screen and (max-width: 899px) {
+  body > footer.site-footer {
+    display: none !important;
   }
 }
