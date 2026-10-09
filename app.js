@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ambientNodes.push({ masterGain });
       isPlaying = true;
       audioToggle.classList.add('playing');
-      audioLabel.textContent = 'Music: On';
+      //audioLabel.textContent = 'Music: On';
       showToast('Background music playing');
     } catch (e) {
       console.warn('Synthesizer audio blocked:', e);
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await bgAudio.play();
         isPlaying = true;
         audioToggle.classList.add('playing');
-        audioLabel.textContent = 'Music: On';
+        //audioLabel.textContent = 'Music: On';
         showToast('Background music playing');
         return;
       } catch (err) {
