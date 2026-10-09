@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Shaik Kabeer — House-Warming Invitation</title>
+  
+  <!-- SEO & WhatsApp Social Sharing Meta Tags -->
+  <meta name="description" content="Shaik Kabeer cordially invites you to celebrate the house-warming of their new home on Sunday, October 11, 2026. Join us for lunch at 1:00 PM in Hyderabad.">
+  <meta property="og:title" content="Shaik Kabeer — Our New Home | House-Warming Invitation">
+  <meta property="og:description" content="Sunday, 11 October 2026 • Lunch at 1:00 PM • Ramachandrapuram, Hyderabad">
+  <meta property="og:image" content="assets/images/hero-entrance.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#FAF7F2">
+
+  <!-- Preconnect to Google Fonts for Speed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Music Audio Element (change src to any MP3 in assets/song/) -->
+  <audio id="bgAudio" src="assets/song/background-music.mp3" loop preload="auto"></audio>
+
+  <!-- Top Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="brand-monogram">
+      <span>HOUSE-WARMING</span>
+    </div>
+    <div class="header-controls">
+      <!-- Share Button -->
+      <button class="btn btn-gold header-share-btn" id="headerShareBtn" title="Share Invitation">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span class="share-btn-text">Share</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION: THE GRAND ENTRANCE
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background-wrapper">
+      <!-- Modern Web Guidance: fetchpriority="high" for LCP candidate image -->
+      <img 
+        src="assets/images/hero-entrance.jpg" 
+        alt="Contemporary South Indian entrance with teak wood door, brass kuthu vilakku, mango leaf toran, and subtle kolam" 
+        class="hero-img" 
+        id="heroImg"
+        fetchpriority="high"
+        width="1920" 
+        height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-pretitle reveal">An Auspicious Beginning</span>
+      <h1 class="hero-title reveal delay-1">OUR NEW HOME</h1>
+      
+      <p class="hero-blessing reveal delay-1">
+        “With the blessings of our family and loved ones”
+      </p>
+
+      <div class="gold-divider reveal delay-2">
+        <div class="gold-divider-icon"></div>
+      </div>
+
+      <h2 class="hero-hosts reveal delay-2">Shaik Kabeer</h2>
+      
+      <p class="hero-invitation-line reveal delay-3">
+        invite you to celebrate the beginning of a beautiful new chapter with us.
+      </p>
+
+      <!-- Prominently Formatted Date & Lunch Block -->
+      <div class="hero-date-block reveal delay-3">
+        <div class="hero-date-row">
+          <span class="hero-day-number">11</span>
+          <div class="hero-date-details">
+            <span class="hero-month">OCTOBER</span>
+            <span class="hero-year">2026</span>
+          </div>
+        </div>
+        <div class="hero-weekday-time">
+          <span>Sunday</span>
+          <span class="dot"></span>
+          <span>Lunch at 1:00 PM</span>
+        </div>
+      </div>
+
+      <!-- Hero Call to Action Buttons -->
+      <div class="hero-actions reveal delay-4">
+        <a href="#location" class="btn btn-gold">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          Get Directions
+        </a>
+        <button class="btn btn-outline-light" id="heroCalendarBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          Add to Calendar
+        </button>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       WELCOME SECTION: "A New Beginning"
+       ========================================================================= -->
+  <section class="section welcome-section" id="welcome">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-text-content reveal">
+          <span class="section-tag">Warm Hospitality</span>
+          <h2 class="welcome-heading">A New Beginning</h2>
+          
+          <p class="welcome-lead">
+            “A home is more than walls and rooms.<br>
+            It is where memories are made,<br>
+            laughter is shared,<br>
+            and new beginnings take shape.”
+          </p>
+
+          <p class="welcome-body">
+            We would be delighted to welcome you into our new home and share this special occasion with you over lunch.
+          </p>
+
+          <div class="welcome-signature">
+            <div class="signature-line"></div>
+            <div class="signature-names">Shaik Kabeer & Family</div>
+          </div>
+        </div>
+
+        <div class="editorial-image-frame reveal delay-2">
+          <div class="editorial-img-container">
+            <img 
+              src="assets/images/brass-uruli.jpg" 
+              alt="Traditional brass uruli vessel with floating frangipani blossoms on sandstone veranda" 
+              class="editorial-img" 
+              loading="lazy"
+              width="800" 
+              height="600">
+            <div class="image-caption-tag">Veranda & Courtyard</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FAMILY SECTION: "With Love From Our Family"
+       ========================================================================= -->
+  <section class="section family-section" id="family">
+    <div class="container">
+      <div class="family-card reveal">
+        <div class="family-grid">
+          <div class="family-image-wrapper">
+            <div class="family-image-frame">
+              <img 
+                src="assets/images/sameer-mama.jpeg" 
+                alt="Shaik Kabeer & Family" 
+                class="family-portrait-img" 
+                loading="lazy"
+                width="600" 
+                height="800">
+            </div>
+            <div class="family-portrait-badge">
+              <span>Shaik Kabeer</span>
+            </div>
+          </div>
+
+          <div class="family-text-content">
+            <span class="section-tag">Our Family</span>
+            <h2 class="family-heading">With Love From Our Family</h2>
+            
+            <div class="gold-divider" style="margin: 1.25rem 0 1.75rem 0; justify-content: flex-start; max-width: 200px;">
+              <div class="gold-divider-icon"></div>
+            </div>
+
+            <p class="family-lead">
+              “As we open the doors of our new home, having our dearest family and friends beside us makes this journey truly blessed.”
+            </p>
+
+            <p class="family-body">
+              We warmly invite you to join us as we celebrate this special beginning. Your presence, laughter, and blessings will make our new home feel complete.
+            </p>
+
+            <div class="family-signature">
+              <span class="family-host-label">Warmly Welcoming You</span>
+              <span class="family-host-names">Shaik Kabeer & Family</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       INVITATION CARD SECTION: "Come, Share Our Joy"
+       ========================================================================= -->
+  <section class="section invitation-section" id="invitation">
+    <div class="container-narrow">
+      <div class="invitation-card reveal">
+        <!-- Kasavu Corner Filigree -->
+        <div class="corner-ornament corner-tl"></div>
+        <div class="corner-ornament corner-tr"></div>
+        <div class="corner-ornament corner-bl"></div>
+        <div class="corner-ornament corner-br"></div>
+
+        <span class="section-tag">Cordially Invited</span>
+        <h2 class="invitation-heading">Come, Share Our Joy</h2>
+
+        <div class="gold-divider">
+          <div class="gold-divider-icon"></div>
+        </div>
+
+        <p class="invitation-prose">
+          Please join us as we open the doors to our new home.<br>
+          Your presence and blessings would make the occasion even more special.
+        </p>
+
+        <!-- Date & Lunch Details Grid -->
+        <div class="invitation-details-grid">
+          <div class="detail-col">
+            <span class="detail-label">The Date</span>
+            <span class="detail-main">SUNDAY</span>
+            <span class="detail-sub">11 October 2026</span>
+          </div>
+
+          <div class="details-separator" aria-hidden="true"></div>
+
+          <div class="detail-col">
+            <span class="detail-label">The Gathering</span>
+            <span class="detail-main">LUNCH</span>
+            <span class="detail-sub">1:00 PM Onwards</span>
+          </div>
+        </div>
+
+        <!-- Card Actions -->
+        <div class="invitation-actions">
+          <button class="btn btn-gold" id="calendarBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Add to Calendar
+          </button>
+
+          <a href="#location" class="btn btn-outline-gold">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            View Venue
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LUNCH SECTION: "Good Food. Good Company. A New Beginning."
+       ========================================================================= -->
+  <section class="section lunch-section" id="lunch">
+    <div class="container">
+      <div class="lunch-layout">
+        <div class="lunch-header reveal">
+          <span class="section-tag">Auspicious Gathering</span>
+          <h2 class="lunch-title">Good Food. Good Company.<br>A New Beginning.</h2>
+          <p class="lunch-intro">
+            Join us for lunch at our new home and make the day even more memorable.
+          </p>
+        </div>
+
+        <!-- Wide Food Visual -->
+        <div class="lunch-visual-wrapper reveal delay-1">
+          <img 
+            src="assets/images/lunch-feast.jpg" 
+            alt="Celebratory family lunch feast served on teak wood dining table with elegant tableware and delicious dishes" 
+            class="lunch-img"
+            loading="lazy"
+            width="1200" 
+            height="675">
+          <div class="lunch-floating-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Sunday • 1:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Refined Highlights -->
+        <div class="lunch-features-grid reveal delay-2">
+          <div class="lunch-feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Warm Hospitality</h3>
+            <p class="feature-desc">Welcoming our dearest family and friends into our new home with open hearts and gracious care.</p>
+          </div>
+
+          <div class="lunch-feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Celebratory Feast</h3>
+            <p class="feature-desc">A specially curated celebratory lunch prepared with love to mark this joyful new beginning together.</p>
+          </div>
+
+          <div class="lunch-feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Cherished Company</h3>
+            <p class="feature-desc">Sharing laughter, heartfelt conversations, and enduring memories around the table.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LOCATION SECTION: "Come Home"
+       ========================================================================= -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="location-wrapper reveal">
+        <div class="location-details">
+          <span class="section-tag">Venue & Directions</span>
+          <h2 class="location-title">Come Home</h2>
+
+          <div class="address-box">
+            <h3 class="address-host-name">Shaik Kabeer</h3>
+            <p class="address-lines">
+              G875+7HQ, Phase 2,<br>
+              NSL Colony, Ramachandrapuram,<br>
+              Hyderabad, Telangana 502032
+            </p>
+          </div>
+
+          <div class="location-buttons">
+            <a 
+              href="https://www.google.com/maps/place/17%C2%B030'46.7%22N+78%C2%B018'31.7%22E/@17.5129814,78.3062401,17z" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn btn-gold">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              GET DIRECTIONS
+            </a>
+
+            <button class="btn btn-outline-gold" id="copyAddressBtn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Address
+            </button>
+          </div>
+        </div>
+
+        <!-- Stylized Map / Architectural Destination Frame -->
+        <div class="location-visual-card">
+          <img 
+            src="assets/images/home-golden-hour.jpg" 
+            alt="Shaik Kabeer's Residence in Hyderabad" 
+            class="location-map-preview"
+            loading="lazy"
+            width="600" 
+            height="400">
+          <div class="map-interactive-overlay">
+            <div class="map-pin-indicator">
+              <div class="map-pin-pulse"></div>
+              <span class="map-city-tag">Hyderabad, Telangana</span>
+            </div>
+            <p class="map-note">NSL Colony, Phase 2 • Ramachandrapuram</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CLOSING SECTION: "With Love, Shaik Kabeer"
+       ========================================================================= -->
+  <section class="closing-section" id="closing">
+    <div class="closing-background-wrapper">
+      <img 
+        src="assets/images/home-golden-hour.jpg" 
+        alt="Welcoming veranda and entrance of the new home bathed in golden hour evening light" 
+        class="closing-img"
+        loading="lazy"
+        width="1920" 
+        height="1080">
+      <div class="closing-overlay"></div>
+    </div>
+
+    <div class="closing-content reveal">
+      <div class="gold-divider">
+        <div class="gold-divider-icon"></div>
+      </div>
+
+      <h2 class="closing-blessing">
+        “Your presence is the blessing<br>we cherish most.”
+      </h2>
+
+      <p class="closing-subtext">
+        Come celebrate our new beginning with us.
+      </p>
+
+      <div class="closing-signature-block">
+        <span class="closing-with-love">With love,</span>
+        <span class="closing-family-name">Shaik Kabeer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Shaik Kabeer • House-Warming Celebration</p>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MOBILE-FIRST STICKY ACTION BAR
+       ========================================================================= -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <div class="mobile-bar-details">
+      <span class="mobile-bar-date">Sun, 11 Oct 2026</span>
+      <span class="mobile-bar-time">Lunch at 1:00 PM</span>
+    </div>
+    <div class="mobile-bar-actions">
+      <a 
+        href="https://www.google.com/maps/place/17%C2%B030'46.7%22N+78%C2%B018'31.7%22E/@17.5129814,78.3062401,17z" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn btn-gold mobile-bar-btn">
+        Directions
+      </a>
+      <button class="btn btn-outline-gold mobile-bar-btn" id="stickyCalendarBtn">
+        Calendar
+      </button>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FLOATING MUSIC TOGGLE (BOTTOM RIGHT CORNER)
+       ========================================================================= -->
+  <aside class="floating-audio-widget" aria-label="Background music controls">
+    <button class="music-fab" id="audioToggle" aria-label="Toggle background music" title="Toggle background music">
+      <div class="music-fab-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18V5l12-2v13"></path>
+          <circle cx="6" cy="18" r="3"></circle>
+          <circle cx="18" cy="16" r="3"></circle>
+        </svg>
+      </div>
+      <div class="music-fab-waves" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <span class="music-fab-label" id="audioLabel">Music: Off</span>
+    </button>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMsg">Address copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
