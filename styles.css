@@ -216,12 +216,8 @@ button {
 }
 
 .site-header.scrolled {
-  background: rgba(250, 247, 242, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   padding: 0.9rem 2rem;
   border-bottom: 1px solid var(--gold-border-subtle);
-  box-shadow: 0 4px 20px rgba(31, 26, 23, 0.05);
 }
 
 .brand-monogram {
@@ -247,6 +243,18 @@ button {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+/* Compact Header Share Button */
+.header-share-btn {
+  padding: 0.35rem 0.5rem;
+  min-width: auto;
+  gap: 0.3rem;
+}
+
+.header-share-btn .btn-icon {
+  width: 12px;
+  height: 12px;
 }
 
 /* ==========================================================================
@@ -1642,3 +1650,66 @@ button {
   color: var(--text-primary);
 }
 
+@media screen and (max-width: 899px) {
+  .site-footer {
+    display: none !important;
+  }
+}
+
+footer.site-footer {
+  display: none !important;
+}
+/* ===== HEADER SHARE BUTTON ===== */
+.site-header .header-controls {
+  position: absolute;
+  right: 16px;
+  left: auto;
+  margin: 0;
+  transform: none;
+}
+
+.site-header .header-share-btn {
+  padding: 0.3rem !important;
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  gap: 0 !important;
+  border-radius: 50% !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header .header-share-btn .btn-icon {
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0;
+}
+
+.site-header .header-share-btn .share-btn-text {
+  display: none;
+}
+
+/* ===== TRANSPARENT HEADER, INCLUDING ON SCROLL ===== */
+.site-header,
+.site-header.scrolled {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* ===== REMOVE FOOTER ON MOBILE ===== */
+@media screen and (max-width: 899px) {
+  footer.site-footer,
+  .site-footer {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+}
